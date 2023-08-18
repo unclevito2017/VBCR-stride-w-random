@@ -1,4 +1,5 @@
-# VBCR-stride-w-random
+# VBCR-stride-w-random Need VBCR.exe a Windows only program<br>
+first download VBCr.exe from https://github.com/WanderingPhilosopher/VanBitCrackenRandom2 <br>
 python3 stride.py <br>
 simultaneous large adjustible stride and narrow adjustable range search<br>
 User input of stride value<br>
