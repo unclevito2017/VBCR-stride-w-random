@@ -12,7 +12,7 @@ adjust time sleep currently set at 30 seconds. More seconds longer will run befo
 some stride values<br>
 100000000000 one hundred billion<br>
 
-1000000000000 trillion<br>
+1000000000000  1 trillion<br>
 
 10000000000000 10 trillion<br>
 
