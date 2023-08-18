@@ -16,14 +16,14 @@ def save_checkpoint(start_keyspace, end_keyspace):
     with open('checkpoint.pkl', 'wb') as f:
         pickle.dump(checkpoint_data, f)
 
-# Function to load the checkpoint
+
 def load_checkpoint():
     if os.path.exists('checkpoint.pkl'):
         with open('checkpoint.pkl', 'rb') as f:
             checkpoint_data = pickle.load(f)
         return checkpoint_data['start_keyspace'], checkpoint_data['end_keyspace']
     else:
-        return '33010000000000000', '33020000000000000'
+        return '20000000000000000', '20010000000000000'
 
 
 def delete_checkpoint():
