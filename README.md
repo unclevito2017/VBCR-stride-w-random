@@ -7,6 +7,7 @@ current range width search  set at 40 bit (10) in code,<br> possible 1 through 1
 generates pickle file .pkl in case of power loss or stop and continue<br>
 adjust -t (threads) -r billions of random keys  and prefix length<br>
 adjust time sleep currently set at 30 seconds. More seconds longer will run before incrementing.br>
+<br>
 some stride values<br>
 100000000000 one hundred billion<br>
 
@@ -19,7 +20,7 @@ some stride values<br>
 1000000000000000 1 quadrillion<br>
 
 10000000000000000 10 quadrillion<br>
-
+<br>
 Random Increment: 63d4c532cf<br>
 Stride: 10000000000000000<br>
 VBCr v2.00<br>
@@ -74,6 +75,7 @@ Random Key :  344D64EB3A7931A1B<br>
 Random Key :  344D64EBE54BF0697<br>
 Random Key :  344D64EED4A8A2A5C<br>
  [00:00:00:14 Run Time][Total 808.89 MK/s][GPU 808.89 MK/s][Keys 11,555,307,520][Found 0][Rekeys: 0]  ^C<br>
+ <br>
  Random Increment: 92d8ed95c7
 Stride: 10000000000000000<br>
 VBCr v2.00<br>
@@ -96,6 +98,7 @@ Random Key :  344F9D6D3DE1CEB70<br>
 Random Key :  344F9D6FD4D69ED19<br>
 Random Key :  344F9D6BADE617FBD<br>
  [00:00:00:26 Run Time][Total 819.57 MK/s][GPU 819.57 MK/s][Keys 21,835,546,624][Found 0][Rekeys: 0]  ^C<br>
+ <br>
  Random Increment: 9ec985ea5c<br>
 Stride: 10000000000000000<br>
 VBCr v2.00<br>
