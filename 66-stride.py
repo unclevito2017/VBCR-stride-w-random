@@ -36,7 +36,7 @@ def run_vbcr(start_keyspace, end_keyspace):
     command = f'VBCr.exe -t 0 -gpu -gpuId 0 -begr {start_keyspace} -endr {end_keyspace} -o {output_filename} -drk 1 -dis 1 -r 25000 -c 13zb1hQb'
 
     process = subprocess.Popen(command, shell=True, creationflags=subprocess.CREATE_NEW_PROCESS_GROUP)
-    time.sleep(30)  # Wait for 30 seconds
+    time.sleep(30)  # Wait for 30 seconds adjust for run time before increment and restart
     os.kill(process.pid, signal.CTRL_BREAK_EVENT)  # Send CTRL_BREAK_EVENT signal to terminate the process group
     process.wait()  # Wait for the process to exit
 
@@ -52,7 +52,7 @@ save_interval = 60  # Save interval in seconds (1 minute)
 while True:
     try:
         while int(end_keyspace, 16) <= int('3ffffffffffffffff', 16):
-            increment = ''.join(random.choices('0123456789abcdef', k=10))  # Generate a random 10-character hexadecimal value
+            increment = ''.join(random.choices('0123456789abcdef', k=10))  #  random 10-character hexadecimal value adjust 1-15 for range width
             print("Random Increment:", increment)  # Display the randomly chosen increment
             print("Stride:", stride)  # Display the stride value
             start_keyspace = start_keyspace[:-len(increment)] + increment  
@@ -62,7 +62,7 @@ while True:
             end_keyspace = min(new_end_keyspace, '3ffffffffffffffff')  
 
             run_vbcr(start_keyspace, end_keyspace)
-            start_keyspace = hex(int(end_keyspace, 16) + stride)[2:]  # Apply the user-defined stride
+            start_keyspace = hex(int(end_keyspace, 16) + stride)[2:]  
 
             # Save the checkpoint every minute
             current_time = time.time()
